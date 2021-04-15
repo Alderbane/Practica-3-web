@@ -15,9 +15,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _currentPageIndex = 0;
   final _titulosList = [
-    "Deportes",
+    "Noticias",
     "Mis noticias",
-    "???",
+    "Crear Noticia",
   ];
   final _pagesList = [
     NoticiasDeportes(),
@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
             label: "${_titulosList[1]}",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.thumb_up),
+            icon: Icon(Icons.add_box_outlined),
             label: "${_titulosList[2]}",
           ),
         ],
